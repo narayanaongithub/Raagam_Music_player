@@ -1,5 +1,5 @@
 let songIndex = 0;
-let audioElement = new Audio('songs/1.mp3');
+let audioElement = new Audio('1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let myGif = document.getElementById('gif');
@@ -13,27 +13,27 @@ let smallPlayButton = document.getElementsByClassName('songItemPlay');
 
 
 let songs=[
-    {songName:'Baby', filePath:'songs/1.mp3', coverPath:'covers/cover1.png'},
-    {songName:'Let Me Love You', filePath:'songs/2.mp3', coverPath:'covers/cover2.png'},
-    {songName:'Passori', filePath:'songs/3.mp3', coverPath:'covers/cover3.png'},
-    {songName:'Jalebi Baby', filePath:'songs/4.mp3', coverPath:'covers/cover4.png'},
-    {songName:'Unstoppable', filePath:'songs/5.mp3', coverPath:'covers/cover5.png'},
-    {songName:'Arabic Kuthu', filePath:'songs/6.mp3', coverPath:'covers/cover6.png'},
-    {songName:'Manike', filePath:'songs/7.mp3', coverPath:'covers/cover7.png'},
-    {songName:'My Name is Billa', filePath:'songs/8.mp3', coverPath:'covers/cover8.jpg'},
-    {songName:'Naatu Naatu', filePath:'songs/9.mp3', coverPath:'covers/cover9.jpg'},
-    {songName:'Raamam Raaghavam', filePath:'songs/10.mp3', coverPath:'covers/cover10.jpg'},
-    {songName:'Sulthana', filePath:'songs/11.mp3', coverPath:'covers/cover11.jpg'},
-    {songName:'Neethoney Dance', filePath:'songs/12.mp3', coverPath:'covers/cover12.jpg'},
-    {songName:'Swing Zara', filePath:'songs/13.mp3', coverPath:'covers/cover13.jpg'},
-    {songName:'Dheera Dheera', filePath:'songs/14.mp3', coverPath:'covers/cover14.jpg'},
-    {songName:'Salaam Rocky Bhai', filePath:'songs/15.mp3', coverPath:'covers/cover15.jpg'},
-    {songName:'Yem Cheddam', filePath:'songs/16.mp3', coverPath:'covers/cover16.jpg'},
-    {songName:'Uppenantha E prema', filePath:'songs/17.mp3', coverPath:'covers/cover17.jpg'},
-    {songName:'My Love is Gone', filePath:'songs/18.mp3', coverPath:'covers/cover18.jpg'},
-    {songName:'Gudilo Badilo', filePath:'songs/19.mp3', coverPath:'covers/cover19.jpg'},
-    {songName:'Vaadu Nadipe', filePath:'songs/20.mp3', coverPath:'covers/cover20.jpg'},
-    {songName:'DJ Tillu Peru', filePath:'songs/21.mp3', coverPath:'covers/cover21.jpg'}
+    {songName:'Baby', filePath:'1.mp3', coverPath:'cover1.png'},
+    {songName:'Let Me Love You', filePath:'2.mp3', coverPath:'cover2.png'},
+    {songName:'Passori', filePath:'3.mp3', coverPath:'cover3.png'},
+    {songName:'Jalebi Baby', filePath:'4.mp3', coverPath:'cover4.png'},
+    {songName:'Unstoppable', filePath:'5.mp3', coverPath:'cover5.png'},
+    {songName:'Arabic Kuthu', filePath:'6.mp3', coverPath:'cover6.png'},
+    {songName:'Manike', filePath:'7.mp3', coverPath:'cover7.png'},
+    {songName:'My Name is Billa', filePath:'8.mp3', coverPath:'cover8.jpg'},
+    {songName:'Naatu Naatu', filePath:'9.mp3', coverPath:'cover9.jpg'},
+    {songName:'Raamam Raaghavam', filePath:'10.mp3', coverPath:'cover10.jpg'},
+    {songName:'Sulthana', filePath:'11.mp3', coverPath:'cover11.jpg'},
+    {songName:'Neethoney Dance', filePath:'12.mp3', coverPath:'cover12.jpg'},
+    {songName:'Swing Zara', filePath:'13.mp3', coverPath:'cover13.jpg'},
+    {songName:'Dheera Dheera', filePath:'14.mp3', coverPath:'cover14.jpg'},
+    {songName:'Salaam Rocky Bhai', filePath:'15.mp3', coverPath:'cover15.jpg'},
+    {songName:'Yem Cheddam', filePath:'16.mp3', coverPath:'cover16.jpg'},
+    {songName:'Uppenantha E prema', filePath:'17.mp3', coverPath:'cover17.jpg'},
+    {songName:'My Love is Gone', filePath:'18.mp3', coverPath:'cover18.jpg'},
+    {songName:'Gudilo Badilo', filePath:'19.mp3', coverPath:'cover19.jpg'},
+    {songName:'Vaadu Nadipe', filePath:'20.mp3', coverPath:'cover20.jpg'},
+    {songName:'DJ Tillu Peru', filePath:'21.mp3', coverPath:'cover21.jpg'}
 ];
 // // Handle Play/Pause
 masterPlay.addEventListener('click', ()=>{
