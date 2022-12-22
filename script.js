@@ -80,7 +80,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         if(audioElement.paused || audioElement.currentTime <= 0){
             e.target.classList.remove('fa-play-circle');
             e.target.classList.add('fa-pause-circle');
-            audioElement.src= `songs/${songIndex+1}.mp3`;
+            audioElement.src= `${songIndex+1}.mp3`;
             masterSongName1.innerText = songs[songIndex].songName;
             masterSongName2.innerText = songs[songIndex].songName;
             audioElement.currentTime = 0;
@@ -93,7 +93,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         else{
             e.target.classList.remove('fa-pause-circle');
             e.target.classList.add('fa-play-circle');
-            audioElement.src= `songs/${songIndex+1}.mp3`;
+            audioElement.src= `${songIndex+1}.mp3`;
             audioElement.pause();
             masterPlay.classList.remove('fa-pause-circle');
             masterPlay.classList.add('fa-play-circle');
@@ -110,7 +110,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     else{
         songIndex +=1
     }
-    audioElement.src= `songs/${songIndex+1}.mp3`;
+    audioElement.src= `${songIndex+1}.mp3`;
     masterSongName1.innerText = songs[songIndex].songName;
     masterSongName2.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
@@ -130,7 +130,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
     else{
         songIndex -=1
     }
-    audioElement.src= `songs/${songIndex+1}.mp3`;
+    audioElement.src= `${songIndex+1}.mp3`;
     masterSongName1.innerText = songs[songIndex].songName;
     masterSongName2.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
@@ -189,12 +189,9 @@ audioElement.src = songs[songIndex];
 audioElement.play();
 }
 
-
-
-
 audioElement.addEventListener('ended', function(){
             songIndex++;
-            audioElement.src= `songs/${songIndex+1}.mp3`;
+            audioElement.src= `${songIndex+1}.mp3`;
             masterSongName1.innerText = songs[songIndex].songName;
             masterSongName2.innerText = songs[songIndex].songName;
             audioElement.currentTime = 0;
